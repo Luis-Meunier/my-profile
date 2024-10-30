@@ -1,0 +1,199 @@
+/* Body Styles */
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fun font */
+    background-color: #ffecb3; /* Light fun background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Header Wrapper */
+.header-wrapper {
+    background-color: #ff6347; /* Vibrant tomato color */
+    padding: 50px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Header Styles */
+header {
+    color: #fff;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 20px 0;
+    border: 5px solid white;
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+header img:hover {
+    transform: rotate(360deg); /* Image spins when hovered */
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+header a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #ffecb3;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 25px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+header a:hover {
+    background-color: #ffecb3;
+    color: #333;
+    transform: scale(1.1); /* Grow on hover */
+}
+
+/* Content Wrapper */
+.content-wrapper {
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+/* Section Styles */
+section {
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #fff8e1;
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #ff6347;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+section p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+/* Footer Wrapper */
+.footer-wrapper {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+/* Footer Styles */
+footer h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+footer a {
+    color: #ff6347;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets and larger phones */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+        letter-spacing: 2px;
+    }
+
+    header img {
+        width: 120px;
+        height: 120px;
+    }
+
+    header a {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+
+    section h2 {
+        font-size: 1.6rem;
+    }
+
+    section p {
+        font-size: 1rem;
+    }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+    }
+
+    header img {
+        width: 100px;
+        height: 100px;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    header a {
+        padding: 5px 10px;
+        font-size: 0.8rem;
+    }
+
+    section {
+        margin: 20px 0;
+    }
+
+    section h2 {
+        font-size: 1.4rem;
+    }
+
+    section p {
+        font-size: 0.9rem;
+    }
+
+    footer h2 {
+        font-size: 1.2rem;
+    }
+
+    footer a {
+        font-size: 1rem;
+    }
+}
